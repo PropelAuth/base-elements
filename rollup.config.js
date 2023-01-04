@@ -8,7 +8,7 @@ import pkg from "./package.json"
 const extensions = [".js", ".jsx", ".ts", ".tsx"]
 
 export default {
-    input: "./src/index.tsx",
+    input: "./src/index.ts",
 
     plugins: [
         peerDepsExternal(),
