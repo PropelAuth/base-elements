@@ -1,18 +1,61 @@
-export { BaseAlert } from "./BaseAlert"
-export { BaseButton } from "./BaseButton"
-export { BaseCheckbox } from "./BaseCheckbox"
-export { BaseContainer } from "./BaseContainer"
-export { BaseDivider } from "./BaseDivider"
-export { BaseH1 } from "./BaseH1"
-export { BaseH3 } from "./BaseH3"
-export { BaseH5 } from "./BaseH5"
-export { BaseImage } from "./BaseImage"
-export { BaseInput } from "./BaseInput"
-export { BaseLabel } from "./BaseLabel"
-export { BaseLink } from "./BaseLink"
-export { BaseModal } from "./BaseModal"
-export { BaseParagraph } from "./BaseParagraph"
-export { BasePopover } from "./BasePopover"
-export { BaseProgress } from "./BaseProgress"
-export { BaseSelect } from "./BaseSelect"
-export { BaseTable } from "./BaseTable"
+import { BaseAlert } from "./BaseAlert"
+import { BaseButton } from "./BaseButton"
+import { BaseCheckbox } from "./BaseCheckbox"
+import { BaseContainer } from "./BaseContainer"
+import { BaseDivider } from "./BaseDivider"
+import { BaseH1 } from "./BaseH1"
+import { BaseH3 } from "./BaseH3"
+import { BaseH5 } from "./BaseH5"
+import { BaseImage } from "./BaseImage"
+import { BaseInput } from "./BaseInput"
+import { BaseLabel } from "./BaseLabel"
+import { BaseLink } from "./BaseLink"
+import { BaseModal } from "./BaseModal"
+import { BaseParagraph } from "./BaseParagraph"
+import { BasePopover } from "./BasePopover"
+import { BaseProgress } from "./BaseProgress"
+import { BaseSelect } from "./BaseSelect"
+import { BaseTable } from "./BaseTable"
+
+const BaseElements = {
+    Alert: BaseAlert,
+    Button: BaseButton,
+    Checkbox: BaseCheckbox,
+    Container: BaseContainer,
+    Divider: BaseDivider,
+    H1: BaseH1,
+    H3: BaseH3,
+    H5: BaseH5,
+    Image: BaseImage,
+    Input: BaseInput,
+    Label: BaseLabel,
+    Link: BaseLink,
+    Modal: BaseModal,
+    Paragraph: BaseParagraph,
+    Popover: BasePopover,
+    Progress: BaseProgress,
+    Select: BaseSelect,
+    Table: BaseTable,
+}
+
+export {
+    BaseAlert,
+    BaseButton,
+    BaseCheckbox,
+    BaseContainer,
+    BaseDivider,
+    BaseH1,
+    BaseH3,
+    BaseH5,
+    BaseImage,
+    BaseInput,
+    BaseLabel,
+    BaseLink,
+    BaseModal,
+    BaseParagraph,
+    BasePopover,
+    BaseProgress,
+    BaseSelect,
+    BaseTable,
+    BaseElements,
+}
