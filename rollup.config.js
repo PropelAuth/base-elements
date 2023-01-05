@@ -20,7 +20,7 @@ export default {
         commonjs(),
 
         // Extract css into separate file
-        postcss({ extract: true }),
+        postcss({ extract: "default.css" }),
 
         // Compile TypeScript/JavaScript files
         babel({

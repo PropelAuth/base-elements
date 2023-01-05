@@ -16,6 +16,7 @@ import { BasePopover } from "./BasePopover"
 import { BaseProgress } from "./BaseProgress"
 import { BaseSelect } from "./BaseSelect"
 import { BaseTable } from "./BaseTable"
+import "./_styles.css"
 
 const BaseElements = {
     Alert: BaseAlert,
