@@ -475,3 +475,44 @@ div[data-contain="qr_code"] .BaseImage {
     width: 100%;
     height: auto;
 }
+
+div[data-contain="org_header"] {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 20px;
+    width: calc(100% - 40px);
+    text-align: left;
+}
+
+div[data-contain="org_header"] h3 {
+    font-size: 24px;
+}
+
+div[data-contain="org_header"] .BaseButton {
+    margin-right: 15px;
+}
+
+div[data-contain="search_action"] select {
+    margin-right: 15px;
+}
+
+div[data-contain="row"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+div[data-contain="row"] .BaseParagraph {
+    margin: 0;
+}
+
+div[data-contain="row"] .BaseParagraph,
+div[data-contain="row"] .BaseButton {
+    margin: 0;
+}
+
+.BaseModal--inner .BaseButton {
+    width: 100%;
+    margin: 15px 0 0 0;
+}
