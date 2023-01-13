@@ -89,6 +89,10 @@
     padding-left: 5px;
 }
 
+div[data-contain="form"] .BaseCheckbox .BaseLabel {
+    margin: 5px 0;
+}
+
 .BaseModal {
     display: none;
     position: fixed;
@@ -398,7 +402,7 @@ div[data-contain="modal"] form .BaseSelect {
 
 .BaseModal--inner div[data-contain="form"] .BaseLabel {
     display: block;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .BaseModal--inner div[data-contain="form"] .BaseButton {
@@ -484,8 +488,8 @@ div[data-contain="org_header"] {
     text-align: left;
 }
 
-div[data-contain="org_header"] h3 {
-    font-size: 24px;
+div[data-contain="org_header"] .BaseH1 {
+    font-size: 26px;
 }
 
 div[data-contain="org_header"] .BaseButton {
