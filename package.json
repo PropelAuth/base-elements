@@ -1,7 +1,7 @@
 {
     "name": "@propelauth/base-elements",
     "description": "Base elements for PropelAuth's component library",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "license": "MIT",
     "keywords": [
         "auth",
