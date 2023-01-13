@@ -240,7 +240,7 @@ div[data-contain="form"] {
 
 div[data-contain="form"] .BaseLabel {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 div[data-contain="form"] .BaseButton {
@@ -398,7 +398,7 @@ div[data-contain="modal"] form .BaseSelect {
 
 .BaseModal--inner div[data-contain="form"] .BaseLabel {
     display: block;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .BaseModal--inner div[data-contain="form"] .BaseButton {
@@ -515,4 +515,9 @@ div[data-contain="row"] .BaseButton {
 .BaseModal--inner .BaseButton {
     width: 100%;
     margin: 15px 0 0 0;
+}
+
+div[data-contain="search_action"] .BaseParagraph {
+    margin: 0 15px 0 0;
+    white-space: nowrap;
 }
