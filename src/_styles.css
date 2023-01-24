@@ -234,7 +234,7 @@ div[data-contain="link"] {
 }
 
 div[data-contain="component"] .BaseContainer {
-    max-width: 300px;
+    max-width: 400px;
 }
 
 div[data-width="full"] .BaseContainer {
