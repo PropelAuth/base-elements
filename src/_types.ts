@@ -1,13 +1,13 @@
 import { Dispatch, SetStateAction, CSSProperties, MouseEventHandler, ChangeEventHandler, ReactNode } from "react"
 
-type AlertProps = {
+export type AlertProps = {
     type?: "error" | "info" | "success" | "warning"
     className?: string
     style?: CSSProperties
     children?: ReactNode
 }
 
-type ButtonProps = {
+export type ButtonProps = {
     onClick?: MouseEventHandler<HTMLButtonElement>
     loading?: boolean
     disabled?: boolean
@@ -17,7 +17,17 @@ type ButtonProps = {
     children?: ReactNode
 }
 
-type CheckboxProps = {
+export type AnchorButtonProps = {
+    onClick?: MouseEventHandler<HTMLButtonElement>
+    loading?: boolean
+    disabled?: boolean
+    id?: string
+    className?: string
+    style?: CSSProperties
+    children?: ReactNode
+}
+
+export type CheckboxProps = {
     checked: boolean
     onChange: ChangeEventHandler<HTMLInputElement>
     id?: string
@@ -28,44 +38,44 @@ type CheckboxProps = {
     style?: CSSProperties
 }
 
-type ContainerProps = {
+export type ContainerProps = {
     className?: string
     style?: CSSProperties
     children?: ReactNode
 }
 
-type DividerProps = {
+export type DividerProps = {
     className?: string
     style?: CSSProperties
     children?: ReactNode
 }
 
-type H1Props = {
+export type H1Props = {
     className?: string
     style?: CSSProperties
     children?: ReactNode
 }
 
-type H3Props = {
+export type H3Props = {
     className?: string
     style?: CSSProperties
     children?: ReactNode
 }
 
-type H5Props = {
+export type H5Props = {
     className?: string
     style?: CSSProperties
     children?: ReactNode
 }
 
-type ImageProps = {
+export type ImageProps = {
     src: string
     alt?: string
     className?: string
     style?: CSSProperties
 }
 
-type InputProps = {
+export type InputProps = {
     value: string
     onChange?: ChangeEventHandler<HTMLInputElement>
     id?: string
@@ -78,21 +88,21 @@ type InputProps = {
     style?: CSSProperties
 }
 
-type LabelProps = {
+export type LabelProps = {
     htmlFor?: string
     className?: string
     style?: CSSProperties
     children?: ReactNode
 }
 
-type LinkProps = {
+export type LinkProps = {
     href: string
     className?: string
     style?: CSSProperties
     children?: ReactNode
 }
 
-type ModalProps = {
+export type ModalProps = {
     show: boolean
     setShow: Dispatch<SetStateAction<boolean>>
     onClose?: () => void
@@ -101,13 +111,13 @@ type ModalProps = {
     children?: ReactNode
 }
 
-type ParagraphProps = {
+export type ParagraphProps = {
     className?: string
     style?: CSSProperties
     children?: ReactNode
 }
 
-type PopoverProps = {
+export type PopoverProps = {
     referenceElement: HTMLElement | null
     show: boolean
     setShow: Dispatch<SetStateAction<boolean>>
@@ -117,35 +127,35 @@ type PopoverProps = {
     children?: ReactNode
 }
 
-type ProgressProps = {
+export type ProgressProps = {
     className?: string
     style?: CSSProperties
 }
 
-type Option = {
+export type Option = {
     label: string
     value: string
 }
 
-type OptionGroup = {
+export type OptionGroup = {
     label: string
     options: Array<Option>
 }
 
-type Column = ReactNode
+export type Column = ReactNode
 
-type Row = {
+export type Row = {
     [key: string]: ReactNode
 }
 
-type TableProps = {
+export type TableProps = {
     columns: Column[]
     rows?: Row[]
     className?: string
     style?: CSSProperties
 }
 
-type SelectProps = {
+export type SelectProps = {
     value: string
     onChange: ChangeEventHandler<HTMLSelectElement>
     options?: Array<OptionGroup | Option>
@@ -157,6 +167,7 @@ type SelectProps = {
 
 export type BaseAlertProps = AlertProps
 export type BaseButtonProps = ButtonProps
+export type BaseAnchorButtonProps = AnchorButtonProps
 export type BaseCheckboxProps = CheckboxProps
 export type BaseContainerProps = ContainerProps
 export type BaseDividerProps = DividerProps
