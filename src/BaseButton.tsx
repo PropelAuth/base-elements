@@ -1,5 +1,5 @@
 import { BaseButtonProps } from "./_types"
-import { BaseProgress } from "./BaseProgress"
+import { BaseLoader } from "./BaseLoader"
 import { prepend } from "./_utils"
 import React, { forwardRef } from "react"
 
@@ -7,7 +7,7 @@ export const BaseButton = forwardRef<HTMLButtonElement, BaseButtonProps>((props,
     const { loading, className, children, ...rest } = props
     return (
         <button ref={ref} className={prepend("BaseButton", className)} {...rest}>
-            {loading ? <BaseProgress /> : children}
+            {loading ? <BaseLoader /> : children}
         </button>
     )
 })
