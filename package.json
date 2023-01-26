@@ -1,7 +1,7 @@
 {
     "name": "@propelauth/base-elements",
     "description": "Base elements for PropelAuth's component library",
-    "version": "0.0.14",
+    "version": "0.0.15",
     "license": "MIT",
     "keywords": [
         "auth",
@@ -42,10 +42,8 @@
         "typescript": "^4.2.4"
     },
     "peerDependencies": {
-        "@popperjs/core": "^2.11.6",
         "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
-        "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0",
-        "react-popper": "^2.3.0"
+        "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
     },
     "main": "dist/index.cjs.js",
     "module": "dist/index.esm.js",

@@ -289,6 +289,25 @@ div[data-contain="social_buttons"] svg {
     height: auto;
 }
 
+div[data-contain="name_fields"] {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div[data-contain="name_fields"] div:first-child,
+div[data-contain="name_fields"] div:last-child {
+    width: 100%;
+}
+
+div[data-contain="name_fields"] div:first-child {
+    padding-right: 7px;
+}
+
+div[data-contain="name_fields"] div:last-child {
+    padding-left: 7px;
+}
+
 div[data-contain="link"] {
     display: flex;
     align-items: center;
@@ -305,65 +324,6 @@ div[data-contain="link"] .BaseButton,
 div[data-contain="links"] .BaseButton {
     border: none;
     background: none;
-}
-
-div[data-contain="search_action"] {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-div[data-contain="search_action"] .BaseInput {
-    margin: 0;
-}
-
-div[data-contain="search_action"] .BaseButton {
-    white-space: nowrap;
-    margin-left: 15px;
-}
-
-div[data-contain="table"] th:first-child,
-div[data-contain="table"] td:first-child {
-    display: none;
-}
-
-div[data-contain="table"] td:last-child {
-    text-align: right;
-    padding: 0;
-}
-
-div[data-contain="table"] td:last-child button {
-    margin: -1px;
-    padding: 12px 12px;
-}
-
-div[data-contain="pagination"] {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-}
-
-div[data-contain="pagination"] .BaseParagraph {
-    margin: 0 0 0 5px;
-}
-
-div[data-contain="pagination_buttons"] .BaseButton:last-child {
-    margin-left: 15px;
-}
-
-div[data-contain="filter_group"] {
-    padding: 12px 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-div[data-contain="filter_group"]:last-child {
-    border-bottom: none;
-}
-
-div[data-contain="filter_group"] .BaseCheckbox:last-child {
-    margin: 0;
 }
 
 div[data-contain="modal"] {
@@ -435,110 +395,7 @@ div[data-contain="components"] div[data-contain="component"]:last-child .BaseCon
     padding-top: 0;
 }
 
-div[data-contain="profile_picture"] {
-    width: 100px;
-    margin: auto;
-    cursor: pointer;
-}
-
-div[data-contain="profile_picture"] .BaseImage {
-    width: 100%;
-    height: auto;
-}
-
-div[data-contain="upload"] .BaseParagraph {
-    display: block;
-    width: 100%;
-    margin: 5px 0 15px 0;
-}
-
-div[data-contain="upload"] .BaseButton {
-    display: block;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-div[data-contain="upload"] .BaseButton:last-child {
-    margin-bottom: 0;
-}
-
-div[data-contain="section"] {
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-    padding: 20px 0 5px 0;
-}
-
-div[data-contain="section"] .BaseH3 {
-    margin: 0 0px 15px 0;
-}
-
-div[data-contain="section"] .BaseLabel {
-    margin-bottom: 10px;
-    display: block;
-}
-
-div[data-contain="section"] .BaseInput {
-    display: block;
-    margin-bottom: 15px;
-}
-
-div[data-contain="components"] .BaseButton {
-    display: block;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-div[data-contain="qr_code"] {
-    margin-bottom: 15px;
-}
-
-div[data-contain="qr_code"] .BaseImage {
-    width: 100%;
-    height: auto;
-}
-
-div[data-contain="org_header"] {
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 20px;
-    width: calc(100% - 40px);
-    text-align: left;
-}
-
-div[data-contain="org_header"] .BaseH1 {
-    font-size: 26px;
-}
-
-div[data-contain="org_header"] .BaseButton {
-    margin-right: 15px;
-}
-
-div[data-contain="search_action"] select {
-    margin-right: 15px;
-}
-
-div[data-contain="row"] {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 10px;
-}
-
-div[data-contain="row"] .BaseParagraph {
-    margin: 0;
-}
-
-div[data-contain="row"] .BaseParagraph,
-div[data-contain="row"] .BaseButton {
-    margin: 0;
-}
-
 .BaseModal--inner .BaseButton {
     width: 100%;
     margin: 15px 0 0 0;
-}
-
-div[data-contain="search_action"] .BaseParagraph {
-    margin: 0 15px 0 0;
-    white-space: nowrap;
 }

@@ -117,17 +117,7 @@ export type ParagraphProps = {
     children?: ReactNode
 }
 
-export type PopoverProps = {
-    referenceElement: HTMLElement | null
-    show: boolean
-    setShow: Dispatch<SetStateAction<boolean>>
-    placement?: string
-    className?: string
-    style?: CSSProperties
-    children?: ReactNode
-}
-
-export type ProgressProps = {
+export type LoaderProps = {
     className?: string
     style?: CSSProperties
 }
@@ -140,19 +130,6 @@ export type Option = {
 export type OptionGroup = {
     label: string
     options: Array<Option>
-}
-
-export type Column = ReactNode
-
-export type Row = {
-    [key: string]: ReactNode
-}
-
-export type TableProps = {
-    columns: Column[]
-    rows?: Row[]
-    className?: string
-    style?: CSSProperties
 }
 
 export type SelectProps = {
@@ -180,7 +157,5 @@ export type BaseLabelProps = LabelProps
 export type BaseLinkProps = LinkProps
 export type BaseModalProps = ModalProps
 export type BaseParagraphProps = ParagraphProps
-export type BasePopoverProps = PopoverProps
-export type BaseProgressProps = ProgressProps
+export type BaseLoaderProps = LoaderProps
 export type BaseSelectProps = SelectProps
-export type BaseTableProps = TableProps

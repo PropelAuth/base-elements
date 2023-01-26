@@ -14,10 +14,8 @@ import { BaseLabel } from "./BaseLabel"
 import { BaseLink } from "./BaseLink"
 import { BaseModal } from "./BaseModal"
 import { BaseParagraph } from "./BaseParagraph"
-import { BasePopover } from "./BasePopover"
-import { BaseProgress } from "./BaseProgress"
+import { BaseLoader } from "./BaseLoader"
 import { BaseSelect } from "./BaseSelect"
-import { BaseTable } from "./BaseTable"
 import "./_styles.css"
 import {
     AlertProps,
@@ -35,10 +33,8 @@ import {
     LinkProps,
     ModalProps,
     ParagraphProps,
-    PopoverProps,
-    ProgressProps,
+    LoaderProps,
     SelectProps,
-    TableProps,
 } from "./_types"
 
 export type BaseElements = {
@@ -57,10 +53,8 @@ export type BaseElements = {
     Link: FC<LinkProps & RefAttributes<HTMLAnchorElement>>
     Modal: (props: ModalProps) => JSX.Element
     Paragraph: FC<ParagraphProps & RefAttributes<HTMLParagraphElement>>
-    Popover: (props: PopoverProps) => JSX.Element
-    Progress: FC<ProgressProps & RefAttributes<HTMLSpanElement>>
+    Loader: FC<LoaderProps & RefAttributes<HTMLSpanElement>>
     Select: FC<SelectProps & RefAttributes<HTMLSelectElement>>
-    Table: FC<TableProps & RefAttributes<HTMLTableElement>>
 }
 
 export const BaseElements: BaseElements = {
@@ -79,10 +73,8 @@ export const BaseElements: BaseElements = {
     Link: BaseLink,
     Modal: BaseModal,
     Paragraph: BaseParagraph,
-    Popover: BasePopover,
-    Progress: BaseProgress,
+    Loader: BaseLoader,
     Select: BaseSelect,
-    Table: BaseTable,
 }
 
 export {
@@ -101,8 +93,6 @@ export {
     BaseLink,
     BaseModal,
     BaseParagraph,
-    BasePopover,
-    BaseProgress,
+    BaseLoader,
     BaseSelect,
-    BaseTable,
 }
