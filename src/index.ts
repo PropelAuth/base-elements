@@ -35,7 +35,9 @@ import {
     ParagraphProps,
     LoaderProps,
     SelectProps,
+    TextAreaProps,
 } from "./_types"
+import { BaseTextArea } from "./BaseTextArea"
 
 export type BaseElements = {
     Alert: FC<AlertProps & RefAttributes<HTMLDivElement>>
@@ -55,6 +57,7 @@ export type BaseElements = {
     Paragraph: FC<ParagraphProps & RefAttributes<HTMLParagraphElement>>
     Loader: FC<LoaderProps & RefAttributes<HTMLSpanElement>>
     Select: FC<SelectProps & RefAttributes<HTMLSelectElement>>
+    TextArea: FC<TextAreaProps & RefAttributes<HTMLTextAreaElement>>
 }
 
 export const BaseElements: BaseElements = {
@@ -75,6 +78,7 @@ export const BaseElements: BaseElements = {
     Paragraph: BaseParagraph,
     Loader: BaseLoader,
     Select: BaseSelect,
+    TextArea: BaseTextArea,
 }
 
 export {
@@ -95,4 +99,5 @@ export {
     BaseParagraph,
     BaseLoader,
     BaseSelect,
+    BaseTextArea,
 }

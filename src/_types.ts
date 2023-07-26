@@ -28,7 +28,7 @@ export type AnchorButtonProps = {
 }
 
 export type CheckboxProps = {
-    checked: boolean
+    checked?: boolean
     onChange: ChangeEventHandler<HTMLInputElement>
     id?: string
     label?: ReactNode
@@ -142,6 +142,21 @@ export type SelectProps = {
     style?: CSSProperties
 }
 
+export type TextAreaProps = {
+    value: string
+    onChange?: ChangeEventHandler<HTMLTextAreaElement>
+    id?: string
+    type?: string
+    required?: boolean
+    disabled?: boolean
+    readOnly?: boolean
+    placeholder?: string
+    className?: string
+    style?: CSSProperties
+    resizable?: boolean
+    wraps?: boolean
+}
+
 export type BaseAlertProps = AlertProps
 export type BaseButtonProps = ButtonProps
 export type BaseAnchorButtonProps = AnchorButtonProps
@@ -159,3 +174,4 @@ export type BaseModalProps = ModalProps
 export type BaseParagraphProps = ParagraphProps
 export type BaseLoaderProps = LoaderProps
 export type BaseSelectProps = SelectProps
+export type BaseTextAreaProps = TextAreaProps
