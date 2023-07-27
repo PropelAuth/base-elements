@@ -36,8 +36,10 @@ import {
     LoaderProps,
     SelectProps,
     TextAreaProps,
+    ToggleProps,
 } from "./_types"
 import { BaseTextArea } from "./BaseTextArea"
+import { BaseToggle } from "./BaseToggle"
 
 export type BaseElements = {
     Alert: FC<AlertProps & RefAttributes<HTMLDivElement>>
@@ -58,6 +60,7 @@ export type BaseElements = {
     Loader: FC<LoaderProps & RefAttributes<HTMLSpanElement>>
     Select: FC<SelectProps & RefAttributes<HTMLSelectElement>>
     TextArea: FC<TextAreaProps & RefAttributes<HTMLTextAreaElement>>
+    Toggle: FC<ToggleProps & RefAttributes<HTMLInputElement>>
 }
 
 export const BaseElements: BaseElements = {
@@ -79,6 +82,7 @@ export const BaseElements: BaseElements = {
     Loader: BaseLoader,
     Select: BaseSelect,
     TextArea: BaseTextArea,
+    Toggle: BaseToggle,
 }
 
 export {
@@ -100,4 +104,5 @@ export {
     BaseLoader,
     BaseSelect,
     BaseTextArea,
+    BaseToggle,
 }

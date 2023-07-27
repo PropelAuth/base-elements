@@ -1,3 +1,4 @@
+import type { SwitchProps } from "@mantine/core"
 import { Dispatch, SetStateAction, CSSProperties, MouseEventHandler, ChangeEventHandler, ReactNode } from "react"
 
 export type AlertProps = {
@@ -155,6 +156,17 @@ export type TextAreaProps = {
     style?: CSSProperties
     resizable?: boolean
     wraps?: boolean
+}
+
+export type ToggleProps = SwitchProps & {
+    checked?: boolean
+    onChange: ChangeEventHandler<HTMLInputElement>
+    id?: string
+    label?: ReactNode
+    required?: boolean
+    disabled?: boolean
+    className?: string
+    style?: CSSProperties
 }
 
 export type BaseAlertProps = AlertProps
